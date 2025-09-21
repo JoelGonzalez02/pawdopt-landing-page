@@ -34,7 +34,7 @@ const features = [
   {
     name: "Video Reels",
     description:
-      "Get to know a pet's true personality with an engaging feed of short videos from pets near you, and popular videos from accross the country.",
+      "Get to know a pet's true personality with an engaging feed of short videos from adoptable pets near you, and popular videos from accross the country.",
     icon: <PlaySquare size={28} className="text-purple-600" />,
   },
   {

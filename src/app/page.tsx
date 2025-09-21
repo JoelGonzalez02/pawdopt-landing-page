@@ -20,7 +20,7 @@ export default function HomePage() {
   return (
     <>
       {/* Pass the active theme to the Header */}
-      <Header theme={activeTheme} />
+      {/* <Header theme={activeTheme} /> */}
 
       <main>
         {/* Attach the refs and add a data-theme attribute to each section */}
