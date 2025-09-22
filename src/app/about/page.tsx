@@ -37,7 +37,7 @@ export default function AboutPage() {
           />
           <h2 className="text-2xl font-bold dark:text-white">Joel Gonzalez</h2>
           <p className="text-md text-gray-500 dark:text-gray-400 mb-8">
-            Founder of Pawdopt
+            Founder and Developer of Pawdopt
           </p>
 
           <div className="space-y-6 text-justify">
