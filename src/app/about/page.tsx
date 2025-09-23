@@ -5,13 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoChevronBack } from "react-icons/io5";
 import Footer from "@/components/Footer";
+import SupportSection from "@/components/SupportSection";
 
 export default function AboutPage() {
   const [showVideo, setShowVideo] = useState(false);
 
   const handleBringToLife = () => {
     setShowVideo(true);
-    // The video will auto-play due to the `autoPlay` attribute
   };
 
   return (
@@ -111,21 +111,34 @@ export default function AboutPage() {
             <p className="text-lg font-semibold italic text-center text-gray-700 dark:text-gray-300">
               Thank you for being a part of this mission!
             </p>
+          </div>
 
-            <p>
-              I would also like to thank{" "}
+          {/* Support Section is now separated for clarity */}
+          {/* <SupportSection /> */}
+
+          {/* --- NEW: ATTRIBUTION SECTION --- */}
+          <div className="w-full border-t border-gray-200 dark:border-gray-800 mt-12 pt-8 flex flex-col items-center">
+            <Image
+              src="/petfinder-logo.png"
+              alt="Petfinder Logo"
+              width={150}
+              height={40}
+              className="object-contain mb-4" // `dark:invert` makes a black logo white in dark mode
+            />
+            <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
+              All adoptable pet data is provided by our partners at{" "}
               <a
                 href="https://www.petfinder.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-purple-600 hover:underline font-semibold"
+                className="font-semibold hover:underline"
               >
                 Petfinder
               </a>
-              .com for graciously providing their amazing data API which allows
-              us to bring you all of your search results.
+              .
             </p>
           </div>
+          {/* --- END ATTRIBUTION SECTION --- */}
         </div>
       </main>
       <Footer />
