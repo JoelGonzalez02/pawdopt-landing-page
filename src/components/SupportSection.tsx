@@ -1,5 +1,3 @@
-// components/SupportSection.tsx
-
 import Link from "next/link";
 
 const SupportSection = () => {
@@ -20,14 +18,13 @@ const SupportSection = () => {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 rounded-full bg-[#67295F] px-6 py-3 font-bold text-white shadow-lg transition-transform hover:scale-105"
         >
-          {/* --- FIX: Replaced SVG with a clearer coffee cup icon --- */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            strokeWidth={1.5} // Adjusted strokeWidth for a slightly finer look
+            strokeWidth={1.5}
           >
             <path
               strokeLinecap="round"

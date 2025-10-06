@@ -4,12 +4,9 @@ export default function Footer() {
   return (
     <footer className="w-full bg-gray-100 dark:bg-gray-800">
       <div className="container mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-600 dark:text-gray-400">
-        {/* --- MODIFIED SECTION --- */}
-        {/* Wrapped text in a div for better alignment on mobile */}
         <div className="text-center sm:text-left">
           <p>© 2025 Pawdopt. All rights reserved.</p>
-          {/* Added the Petfinder attribution link below the copyright */}
-          <p className="text-xs mt-1">
+          {/* <p className="text-xs mt-1">
             Data provided by{" "}
             <a
               href="https://www.petfinder.com"
@@ -20,7 +17,7 @@ export default function Footer() {
               Petfinder
             </a>
             .
-          </p>
+          </p> */}
         </div>
         <div className="flex flex-wrap justify-center gap-6 mt-4 sm:mt-0">
           <Link href="/about" className="hover:text-purple-600">

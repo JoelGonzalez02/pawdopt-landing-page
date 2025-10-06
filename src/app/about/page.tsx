@@ -22,7 +22,7 @@ export default function AboutPage() {
             <IoChevronBack size={28} />
           </Link>
           <h1 className="text-lg font-bold">Our Mission</h1>
-          <div className="w-10" /> {/* Spacer */}
+          <div className="w-10" />
         </div>
       </header>
 
@@ -59,7 +59,6 @@ export default function AboutPage() {
           </div>
 
           <div className="relative w-full max-w-md mx-auto aspect-[9/16] rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-800 my-8 shadow-lg">
-            {/* Image Layer */}
             <Image
               src="/robin.jpg"
               alt="Robin the cat"
@@ -69,7 +68,6 @@ export default function AboutPage() {
               }`}
             />
 
-            {/* Video Layer */}
             {showVideo && (
               <video
                 src="/robin-video.mp4"
@@ -81,7 +79,6 @@ export default function AboutPage() {
               />
             )}
 
-            {/* Button Layer */}
             {!showVideo && (
               <div className="absolute inset-0 flex items-end justify-center pb-6">
                 <button
@@ -113,17 +110,15 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Support Section is now separated for clarity */}
           {/* <SupportSection /> */}
 
-          {/* --- NEW: ATTRIBUTION SECTION --- */}
-          <div className="w-full border-t border-gray-200 dark:border-gray-800 mt-12 pt-8 flex flex-col items-center">
+          {/* <div className="w-full border-t border-gray-200 dark:border-gray-800 mt-12 pt-8 flex flex-col items-center">
             <Image
               src="/petfinder-logo.png"
               alt="Petfinder Logo"
               width={150}
               height={40}
-              className="object-contain mb-4" // `dark:invert` makes a black logo white in dark mode
+              className="object-contain mb-4"
             />
             <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
               All adoptable pet data is provided by our partners at{" "}
@@ -137,8 +132,7 @@ export default function AboutPage() {
               </a>
               .
             </p>
-          </div>
-          {/* --- END ATTRIBUTION SECTION --- */}
+          </div> */}
         </div>
       </main>
       <Footer />

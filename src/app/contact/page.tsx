@@ -1,11 +1,8 @@
 "use client";
 
-import Header from "@/components/Header";
-
 export default function ContactPage() {
   return (
     <>
-      <Header theme="light" />
       <main className="bg-white dark:bg-gray-900">
         <div className="container mx-auto px-6 py-20">
           <div className="max-w-xl mx-auto">
@@ -20,7 +17,7 @@ export default function ContactPage() {
             </div>
 
             <form
-              action="https://formspree.io/f/xnnbejdr" // <-- 3. REPLACE WITH YOUR FORMPSREE URL
+              action="https://formspree.io/f/xnnbejdr"
               method="POST"
               className="mt-12 space-y-6"
             >

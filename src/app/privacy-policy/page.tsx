@@ -1,10 +1,6 @@
-import Link from "next/link";
-import Header from "@/components/Header";
-
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <Header theme="dark" />
       <main className="bg-white dark:bg-gray-900">
         <div className="container mx-auto px-6 py-20 text-gray-800 dark:text-gray-200">
           <div className="max-w-4xl mx-auto">

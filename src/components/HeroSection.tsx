@@ -1,12 +1,9 @@
-// src/components/HeroSection.tsx
-
 import Image from "next/image";
 import Link from "next/link";
 
 export default function HeroSection() {
   return (
     <section className="relative flex items-center justify-center min-h-screen w-full">
-      {/* --- NEW: Logo positioned at the top --- */}
       <div className="absolute top-0 left-0 w-full p-6 z-20">
         <Link href="/" className="flex items-center gap-2">
           <Image
@@ -14,13 +11,11 @@ export default function HeroSection() {
             alt="Pawdopt Logo"
             width={189}
             height={189}
-            // The 'invert' class makes the logo white
             className="invert"
           />
         </Link>
       </div>
 
-      {/* Background Image */}
       <Image
         src="/hero-background.png"
         alt="A happy couple with their newly adopted pet"
@@ -30,10 +25,8 @@ export default function HeroSection() {
         className="z-[-2]"
       />
 
-      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50 z-[-1]" />
 
-      {/* Centered Content */}
       <div className="relative z-10 flex flex-col items-center gap-6 text-center text-white px-6">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
           Bring your best friend home

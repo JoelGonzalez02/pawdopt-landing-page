@@ -1,6 +1,6 @@
-"use client"; // *** NEW ***: This component is now interactive, so it must be a Client Component.
+"use client";
 
-import { motion } from "framer-motion"; // *** NEW ***: Import the motion component.
+import { motion } from "framer-motion";
 import {
   Heart,
   PlaySquare,
@@ -11,7 +11,6 @@ import {
 import Image from "next/image";
 
 const features = [
-  // ... your features array remains the same
   {
     name: "Swipe Mode",
     description:
@@ -61,7 +60,6 @@ export default function FeaturesSection() {
   return (
     <section className="w-full min-h-screen bg-white flex flex-col items-center justify-center py-20 overflow-hidden">
       <div className="container mx-auto px-6">
-        {/* *** MODIFIED ***: Header is now a motion.div to animate it. */}
         <motion.div
           className="text-center max-w-2xl mx-auto mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -80,7 +78,6 @@ export default function FeaturesSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-16">
-          {/* *** MODIFIED ***: Each feature card is now a motion.div. */}
           {features.map((feature, index) => (
             <motion.div
               key={feature.name}
@@ -88,7 +85,7 @@ export default function FeaturesSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }} // Staggered delay
+              transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="bg-purple-100 p-4 rounded-full mb-4">
                 {feature.icon}
