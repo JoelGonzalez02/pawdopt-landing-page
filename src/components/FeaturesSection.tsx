@@ -45,7 +45,7 @@ const features = [
   {
     name: "Set Preferences",
     description:
-      "Use our powerful filters powered by Petfinder.com to narrow your search. Filter by location, distance, age, breed, gender, and more to find the perfect match.",
+      "Use our powerful filters to narrow your search. Filter by location, distance, age, breed, gender, and more to find the perfect match.",
     icon: <SlidersHorizontal size={28} className="text-purple-600" />,
   },
   {
