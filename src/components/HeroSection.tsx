@@ -35,7 +35,6 @@ export default function HeroSection() {
           Bring your best friend home
         </h1>
         <p className="text-lg md:text-xl text-gray-200">
-          I am visiting local shelters to share the stories of overlooked pets.
           To launch Pawdopt with the most comprehensive data, we need to partner
           with Petfinder. Sign the petition to show your support and help bring
           this app to life.
