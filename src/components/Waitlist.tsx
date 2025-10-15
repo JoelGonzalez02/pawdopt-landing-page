@@ -1,4 +1,48 @@
+import { useState } from "react";
+
 export default function Waitlist() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  // FIX 1: Add the correct type for the 'event' parameter
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
+    setIsLoading(true);
+    setMessage("");
+
+    try {
+      const response = await fetch(
+        "https://pawdopt-server-2.vercel.app/api/waitlist",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Something went wrong.");
+      }
+
+      setMessage(data.message);
+      setEmail("");
+    } catch (error) {
+      // FIX 2: Check the type of 'error' before using it
+      if (error instanceof Error) {
+        setMessage(error.message);
+      } else {
+        setMessage("An unexpected error occurred.");
+      }
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <section
       id="waitlist"
@@ -12,22 +56,27 @@ export default function Waitlist() {
           Join the private beta for exclusive early access in the Los Angeles
           area and be the first to know when we launch.
         </p>
-        <form className="w-full max-w-md">
+        <form className="w-full max-w-md" onSubmit={handleSubmit}>
           <div className="flex flex-col sm:flex-row gap-4">
             <input
               type="email"
               placeholder="Enter your email address"
               className="flex-grow bg-gray-800 text-white px-6 py-3 rounded-full border border-gray-700 focus:outline-none focus:ring-2 focus:ring-white"
               required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              disabled={isLoading}
             />
             <button
               type="submit"
-              className="bg-white text-black font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition-colors"
+              className="bg-white text-black font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition-colors disabled:bg-gray-400"
+              disabled={isLoading}
             >
-              Join Waitlist
+              {isLoading ? "Joining..." : "Join Waitlist"}
             </button>
           </div>
         </form>
+        {message && <p className="mt-4 text-sm text-gray-300">{message}</p>}
       </div>
     </section>
   );
