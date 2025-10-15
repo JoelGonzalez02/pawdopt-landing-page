@@ -32,32 +32,22 @@ export default function HeroSection() {
 
       <div className="relative z-10 flex flex-col items-center gap-6 text-center text-white px-6 max-w-3xl">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-          Bring your best friend home
+          A new way to discover your best friend.
         </h1>
+        {/* NEW: Announce the private beta for LA */}
         <p className="text-lg md:text-xl text-gray-200">
-          To launch Pawdopt with the most comprehensive data, we need to partner
-          with Petfinder. Sign the petition to show your support and help bring
-          this app to life.
+          The most engaging way to find adoptable pets is almost here. Join the
+          private beta for exclusive early access in the Los Angeles area.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
-          {/* The <Link> component for the petition, without a nested <a> tag */}
+          {/* UPDATED: A single, clear call-to-action for the waitlist */}
           <Link
-            href="https://c.org/VmNQnP8sTn"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#waitlist" // This should link to your waitlist form section
             className="bg-white text-black font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition-colors text-lg"
           >
-            Sign the Petition
+            Join the Private Beta
           </Link>
-
-          {/* The <Link> component for the waitlist, without a nested <a> tag */}
-          {/* <Link
-            href="#waitlist"
-            className="bg-transparent border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-black transition-colors text-lg"
-          >
-            Join the Waitlist
-          </Link> */}
         </div>
       </div>
     </section>
