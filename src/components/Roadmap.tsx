@@ -18,7 +18,7 @@ export default function Roadmap() {
       phase: "Phase 3",
       title: "Nationwide Expansion",
       description:
-        "Pending a partnership with Petfinder, we will scale our platform to serve every city in the nation, ensuring every pet gets the spotlight.",
+        "Pending a partnership with Petfinder.com, we will scale our platform to serve every city in the nation, ensuring every pet gets the spotlight.",
       status: "Awaiting Partnership",
     },
   ];

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-600 dark:text-gray-400">
         <div className="text-center sm:text-left">
           <p>© 2025 Pawdopt. All rights reserved.</p>
-          {/* <p className="text-xs mt-1">
+          <p className="text-xs mt-1">
             Data provided by{" "}
             <a
               href="https://www.petfinder.com"
@@ -17,7 +17,7 @@ export default function Footer() {
               Petfinder
             </a>
             .
-          </p> */}
+          </p>
         </div>
         <div className="flex flex-wrap justify-center gap-6 mt-4 sm:mt-0">
           <Link href="/about" className="hover:text-purple-600">
@@ -33,14 +33,14 @@ export default function Footer() {
             Terms of Service
           </Link>
           <Link
-            href="https://tiktok.com/@pawadoptapp"
+            href="https://www.tiktok.com/@pawdopt?_t=ZP-90aDEnDCAhz&_r=1"
             target="_blank"
             className="hover:text-purple-600"
           >
             TikTok
           </Link>
           <Link
-            href="https://instagram.com/pawadoptapp"
+            href="https://www.instagram.com/pawdopt.app/?igsh=MWxxOGlpZmQwYThzcQ%3D%3D&utm_source=qr#"
             target="_blank"
             className="hover:text-purple-600"
           >

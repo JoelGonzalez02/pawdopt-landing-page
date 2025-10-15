@@ -5,7 +5,6 @@ export default function Waitlist() {
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  // FIX 1: Add the correct type for the 'event' parameter
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     setIsLoading(true);
@@ -32,7 +31,6 @@ export default function Waitlist() {
       setMessage(data.message);
       setEmail("");
     } catch (error) {
-      // FIX 2: Check the type of 'error' before using it
       if (error instanceof Error) {
         setMessage(error.message);
       } else {
@@ -56,6 +54,7 @@ export default function Waitlist() {
           Join the private beta for exclusive early access in the Los Angeles
           area and be the first to know when we launch.
         </p>
+
         <form className="w-full max-w-md" onSubmit={handleSubmit}>
           <div className="flex flex-col sm:flex-row gap-4">
             <input
@@ -75,7 +74,15 @@ export default function Waitlist() {
               {isLoading ? "Joining..." : "Join Waitlist"}
             </button>
           </div>
+
+          {/* Privacy disclaimer */}
+          <p className="text-xs text-gray-400 mt-8">
+            By joining the waitlist, you agree to receive occasional updates
+            about Pawdopt. Your email will only be used for product updates and
+            will never be shared with third parties.
+          </p>
         </form>
+
         {message && <p className="mt-4 text-sm text-gray-300">{message}</p>}
       </div>
     </section>

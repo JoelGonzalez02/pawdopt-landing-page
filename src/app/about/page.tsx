@@ -112,7 +112,7 @@ export default function AboutPage() {
 
           {/* <SupportSection /> */}
 
-          {/* <div className="w-full border-t border-gray-200 dark:border-gray-800 mt-12 pt-8 flex flex-col items-center">
+          <div className="w-full border-t border-gray-200 dark:border-gray-800 mt-12 pt-8 flex flex-col items-center">
             <Image
               src="/petfinder-logo.png"
               alt="Petfinder Logo"
@@ -121,7 +121,7 @@ export default function AboutPage() {
               className="object-contain mb-4"
             />
             <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
-              All adoptable pet data is provided by our partners at{" "}
+              All adoptable pet data is provided by{" "}
               <a
                 href="https://www.petfinder.com"
                 target="_blank"
@@ -132,7 +132,7 @@ export default function AboutPage() {
               </a>
               .
             </p>
-          </div> */}
+          </div>
         </div>
       </main>
       <Footer />
