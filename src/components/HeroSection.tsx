@@ -37,7 +37,7 @@ export default function HeroSection() {
         {/* NEW: Announce the private beta for LA */}
         <p className="text-lg md:text-xl text-gray-200">
           The most engaging way to find adoptable pets is almost here. Join the
-          private beta for exclusive early access in the Los Angeles area.
+          waitlist for exclusive early access in the Los Angeles area.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
@@ -46,7 +46,7 @@ export default function HeroSection() {
             href="#waitlist" // This should link to your waitlist form section
             className="bg-white text-black font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition-colors text-lg"
           >
-            Join the Private Beta
+            Join Waitlist
           </Link>
         </div>
       </div>

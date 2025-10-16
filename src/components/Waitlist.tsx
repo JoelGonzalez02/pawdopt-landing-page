@@ -51,8 +51,8 @@ export default function Waitlist() {
           Be Part of the Story
         </h2>
         <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
-          Join the private beta for exclusive early access in the Los Angeles
-          area and be the first to know when we launch.
+          Join the waitlist for exclusive early access to our private beta in
+          the Los Angeles area and be the first to know when we launch.
         </p>
 
         <form className="w-full max-w-md" onSubmit={handleSubmit}>
