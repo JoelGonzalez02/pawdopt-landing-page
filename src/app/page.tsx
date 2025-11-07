@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
+import CommunitySupportSection from "@/components/CommunitySupport";
 import VideoSection from "@/components/VideoSection";
 import Roadmap from "@/components/Roadmap";
 import Waitlist from "@/components/Waitlist";
@@ -18,6 +19,9 @@ export default function HomePage() {
       <main>
         <div ref={heroRef} data-theme="dark">
           <HeroSection />
+        </div>
+        <div data-theme="dark">
+          <CommunitySupportSection />
         </div>
         <div ref={featuresRef} data-theme="light">
           <FeaturesSection />
